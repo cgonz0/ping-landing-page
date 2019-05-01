@@ -1,0 +1,167 @@
+@import './_variables.scss';
+
+
+html {
+  font-size: 20px;
+}
+
+body {
+  text-align: center;
+  font-family: 'Libre Franklin';
+}
+
+.container {
+  margin-top: 2rem;
+  max-width: 640px;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+p {
+  margin-bottom: 35px;
+  font-size: .8rem;
+}
+
+form {
+  margin-bottom: 50px;
+  font-size: 16px;
+  ul {
+    padding: 0px;
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+.email {
+  border: 1px solid $paleBlue;
+  border-radius: 50px;
+  padding: 15px 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  &::-moz-placeholder {
+    color: $paleBlue;
+  }
+  &::-webkit-input-placeholder {
+    color: $paleBlue;
+  }
+}
+
+.button {
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 20px;
+  background-color: $blue;
+  color: $white;
+  width: 100%;
+  box-shadow: 3px 4px 12px 0px $paleBlue;
+  &:hover {
+    background-color: $blue;
+    opacity: .8;
+  }
+}
+
+.social ul {
+  padding: 0;
+  list-style-type: none;
+  li {
+    display: inline-block;
+    margin: 0 5px;
+    a {
+      color: $blue;
+      font-size: .8rem;
+      &:hover i {
+        background-color: #f2f2f2;
+      }
+      i {
+        border: 1px solid $lightGray;
+        border-radius: 30px;
+        width: 30px;
+        height: 30px;
+        padding: .35em;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 10px;
+  .attribution {
+    font-size: .6rem;
+    a {
+      color: $blue;
+    }
+  }
+}
+
+.copyright {
+  color: $gray;
+  font-size: .6rem;
+}
+
+img {
+  margin-bottom: 3.5rem;
+}
+
+img.dashboard {
+  width: 100%;
+}
+
+h1 {
+  color: $gray;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  & span {
+    color: $black;
+    font-weight: 700;
+  }
+}
+
+#error {
+  display: none;
+  color: $lightRed;
+  font-style: italic;
+  font-size: .6rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+  h1 {
+    font-size: 2.25em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  form ul {
+    width: 100%;
+  }
+
+  .email {
+    width: 65%;
+    margin: 0 10px 0 0;
+  }
+
+  .button {
+    width: 30%;
+  }
+
+  #error {
+    text-align: left;
+    margin: 10px 0 0 40px;
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    margin-top: 4rem;
+  }
+}
+//375px
+
