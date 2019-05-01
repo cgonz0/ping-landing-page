@@ -7,9 +7,9 @@
 // $(function () { $('[data-toggle="popover"]').popover(); });
 
 
-function validateForm(inputText) {
-  var regex = /[a-z0-9\._%+!$&*=^|~#%'`?{}/\-]+@([a-z0-9\-]+\.){1,}([a-z]{2,16})/;
-  if(inputText.value.match(regex)) {
+function validateForm({value}) {
+  const regex = /[a-z0-9\._%+!$&*=^|~#%'`?{}/\-]+@([a-z0-9\-]+\.){1,}([a-z]{2,16})/;
+  if(value.match(regex)) {
     // document.form.text.focus();
     return true;
   }
