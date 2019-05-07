@@ -26,20 +26,23 @@
     <![endif]-->
     <div class="container">
       <body>
-        <img src="./images/logo.svg">
-        <h1>We are launching <span>soon!</span></h1>
+        <img class="logo" src="./images/logo.svg">
 
-        <p>Subscribe and get notified</p>
+        <div class="main">
+          <h1>We are launching <span>soon!</span></h1>
 
-        <form name="form" action="#">
-            <ul id="input">
-              <input type="text" class="email" id="email" name="text" placeholder="Your email address..." >
-              <input type="submit" class="button" value="Notify Me" name="submit" onclick="validateForm(document.form.text)">
-              <div id="error">Please provide a valid email address</div>
-            </ul>
-        </form>
+          <p>Subscribe and get notified</p>
 
-        <img class="dashboard" src="./images/illustration-dashboard.png">
+          <form name="form" action="#">
+              <ul id="input">
+                <input type="text" class="email" id="email" name="text" placeholder="Your email address..." >
+                <input type="submit" class="button" value="Notify Me" name="submit" onclick="validateForm(document.form.text)">
+                <div id="error">Please provide a valid email address</div>
+              </ul>
+          </form>
+
+          <img class="dashboard" src="./images/illustration-dashboard.png">
+        </div>
 
         <div class="social">
           <ul>
